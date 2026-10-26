@@ -1,4 +1,4 @@
-//package com.ridevpn.client;
+package com.ridevpn.client;
 
 import java.nio.file.Files;
 import java.nio.file.Path;

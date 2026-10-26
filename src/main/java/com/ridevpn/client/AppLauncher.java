@@ -1,4 +1,4 @@
-// package com.ridevpn.client;
+package com.ridevpn.client;
 
 public class AppLauncher {
     public static void main(String[] args) {

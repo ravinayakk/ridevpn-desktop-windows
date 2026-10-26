@@ -1,4 +1,4 @@
-//package com.ridevpn.client;
+package com.ridevpn.client;
 
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 
 public class MainApp extends Application {
 
-    private static final String BACKEND_API_URL = "http://YOUR_EC2_PUBLIC_IP:8080/api/v1/vpn/config";
+    private static final String BACKEND_API_URL = "http://23.20.22.249:8080/api/v1/vpn/config";
     private boolean isConnected = false;
 
     @Override
