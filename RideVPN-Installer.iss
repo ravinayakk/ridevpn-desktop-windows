@@ -19,4 +19,10 @@ Name: "{group}\RideVPN"; Filename: "{app}\RideVPN.exe"
 Name: "{autodesktop}\RideVPN"; Filename: "{app}\RideVPN.exe"
 
 [Run]
-Filename: "{app}\RideVPN.exe"; Description: "Launch RideVPN"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\RideVPN.exe"; Description: "Launch RideVPN"; Flags: nowait postinstall skipifsilent shellexec
+
+[UninstallRun]
+Filename: "{app}\bin\wireguard.exe"; Parameters: "/uninstalltunnelservice ridevpn"; Flags: runhidden; RunOnceId: "RemoveTunnel"
+
+[UninstallDelete]
+Type: filesandordirs; Name: "{commonappdata}\RideVPN"
