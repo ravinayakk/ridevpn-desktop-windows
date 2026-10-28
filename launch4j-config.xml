@@ -2,7 +2,7 @@
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
   <jar>target/ridevpn-desktop-windows-1.0.0.jar</jar>
-  <outline>build-dist/RideVPN.exe</outline>
+  <outfile>build-dist/RideVPN.exe</outfile>
   <errTitle>RideVPN Launch Error</errTitle>
   <chdir>.</chdir>
   <priority>normal</priority>
