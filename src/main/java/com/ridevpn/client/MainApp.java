@@ -22,7 +22,7 @@ import javafx.stage.Stage;
 
 public class MainApp extends Application {
 
-    private static final String BACKEND_API_URL = "http://35.153.199.173:8080/api/config";
+    private static final String BACKEND_API_URL = "http://107.20.240.162:8080/api/config";
 
     private static final String RED = "-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: red;";
     private static final String GREEN = "-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: green;";
@@ -179,7 +179,7 @@ public class MainApp extends Application {
                     .uri(URI.create(BACKEND_API_URL))
                     .timeout(Duration.ofSeconds(20))
                     .header("Authorization", "Basic " + credentials)
-                    .GET()
+                    .POST(HttpRequest.BodyPublishers.noBody())
                     .build();
 
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
